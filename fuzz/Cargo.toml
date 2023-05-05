@@ -41,3 +41,9 @@ name = "parsum"
 path = "fuzz_targets/parsum.rs"
 test = false
 doc = false
+
+[[bin]]
+name = "collect"
+path = "fuzz_targets/collect.rs"
+test = false
+doc = false

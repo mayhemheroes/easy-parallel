@@ -1,0 +1,7 @@
+project: easy-parallel
+target: collect
+duration: 90
+
+cmds:
+    - cmd: /collect
+
