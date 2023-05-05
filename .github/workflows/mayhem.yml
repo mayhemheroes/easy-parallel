@@ -58,7 +58,6 @@ jobs:
         - fuzz/mayhemfiles/Mayhemfile_finish
         - fuzz/mayhemfiles/Mayhemfile_smoke
         - fuzz/mayhemfiles/Mayhemfile_parsum
-        - fuzz/mayhemfiles/Mayhemfile_parsum
     steps:
     - uses: actions/checkout@v3
     - name: Start analysis for ${{ matrix.mayhemfile }}
