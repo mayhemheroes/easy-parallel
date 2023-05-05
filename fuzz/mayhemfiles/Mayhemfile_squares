@@ -1,0 +1,7 @@
+project: easy-parallel
+target: squares
+duration: 90
+
+cmds:
+    - cmd: /squares
+
