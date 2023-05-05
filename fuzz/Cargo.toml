@@ -23,3 +23,9 @@ name = "squares"
 path = "fuzz_targets/squares.rs"
 test = false
 doc = false
+
+[[bin]]
+name = "finish"
+path = "fuzz_targets/finish.rs"
+test = false
+doc = false
