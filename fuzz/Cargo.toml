@@ -35,3 +35,9 @@ name = "smoke"
 path = "fuzz_targets/smoke.rs"
 test = false
 doc = false
+
+[[bin]]
+name = "parsum"
+path = "fuzz_targets/parsum.rs"
+test = false
+doc = false

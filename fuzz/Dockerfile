@@ -23,3 +23,5 @@ COPY --from=builder /easy-parallel/fuzz/target/x86_64-unknown-linux-gnu/release/
 COPY --from=builder /easy-parallel/fuzz/target/x86_64-unknown-linux-gnu/release/finish /
 
 COPY --from=builder /easy-parallel/fuzz/target/x86_64-unknown-linux-gnu/release/smoke /
+
+COPY --from=builder /easy-parallel/fuzz/target/x86_64-unknown-linux-gnu/release/parsum /
