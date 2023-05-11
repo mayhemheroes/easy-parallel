@@ -54,11 +54,11 @@ jobs:
       fail-fast: false
       matrix:
         mayhemfile:
-        - fuzz/mayhemfiles/Mayhemfile_squares
-        - fuzz/mayhemfiles/Mayhemfile_finish
-        - fuzz/mayhemfiles/Mayhemfile_smoke
-        - fuzz/mayhemfiles/Mayhemfile_parsum
-        - fuzz/mayhemfiles/Mayhemfile_collect
+        - mayhem/squares.mayhemfile
+        - mayhem/finish.mayhemfile
+        - mayhem/smoke.mayhemfile
+        - mayhem/parsum.mayhemfile
+        - mayhem/collect.mayhemfile
     steps:
     - uses: actions/checkout@v3
     - name: Start analysis for ${{ matrix.mayhemfile }}
