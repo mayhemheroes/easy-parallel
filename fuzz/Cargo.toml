@@ -1,0 +1,49 @@
+[package]
+name = "easy-parallel-fuzz"
+version = "0.1.0"
+authors = ["Automatically generated"]
+publish = false
+edition = "2018"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+libfuzzer-sys = "0.4"
+
+[dependencies.easy-parallel]
+path = ".."
+
+# Prevent this from interfering with workspaces
+[workspace]
+members = ["."]
+
+[[bin]]
+name = "squares"
+path = "fuzz_targets/squares.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "finish"
+path = "fuzz_targets/finish.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "smoke"
+path = "fuzz_targets/smoke.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "parsum"
+path = "fuzz_targets/parsum.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "collect"
+path = "fuzz_targets/collect.rs"
+test = false
+doc = false

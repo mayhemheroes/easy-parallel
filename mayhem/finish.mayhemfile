@@ -1,0 +1,7 @@
+project: easy-parallel
+target: finish
+duration: 90
+
+cmds:
+    - cmd: /finish
+

@@ -1,0 +1,7 @@
+project: easy-parallel
+target: smoke
+duration: 90
+
+cmds:
+    - cmd: /smoke
+
